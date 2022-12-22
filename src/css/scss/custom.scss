@@ -1,0 +1,33 @@
+
+
+//  custom variables
+
+$primary: #cbb26A;
+$secondary: #be9e44;
+$success: #1109fb;
+$danger: #c4d01cd1;
+$info: #d8c690;
+$light: #e5d9b6;
+$dark: #000;
+
+
+// $body-bg: $light;
+
+// $link-color:                              $primary !default;
+// $link-decoration:                         underline !default;
+// $link-shade-percentage:                   20% !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+// $link-hover-decoration:                   null !default;
+
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      Arial, Helvetica, sans-serif;
+$font-family-monospace:       source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+
+// import bootstrap
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+

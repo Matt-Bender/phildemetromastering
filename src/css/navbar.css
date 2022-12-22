@@ -1,0 +1,26 @@
+/* Used for the nav bar buttons */
+.hover-button:hover {
+    color: var(--primary) !important;
+  
+  }
+  
+  .contact-button:hover{
+    color: var(--light) !important;
+    
+  }
+
+.navbar {
+    background: rgb(26,26,26);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 100%, rgba(26,26,26,1) 53%);
+
+}
+
+.icons {
+  filter: invert(75%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);
+  height: 40px;
+  margin: 10px;
+}
+
+.social-container {
+
+}

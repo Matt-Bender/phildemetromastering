@@ -1,0 +1,26 @@
+.has-bg-img {
+    background-image: url("../images/soundboard1.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .about-img {
+      width: auto;
+      max-width: 800px;
+      height: auto;
+      max-height: 800px;
+      position: relative;
+  overflow: hidden;
+  }
+
+  .deskPicture {
+    background-image: url('../images/mic.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
