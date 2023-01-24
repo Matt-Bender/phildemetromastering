@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 import TestComponent from './components/TestComponent';
 import Stylesheet from './components/Stylesheet';
 import './css/app.css';
-import MoreView from './pages/MoreView';
+import ProjectsView from './pages/ProjectsView';
 import DarkSpace from './components/DarkSpace';
 
 
@@ -29,7 +29,7 @@ function App() {
         <Route exact path="/" element={<HomeView />}/>
         <Route path="/contact" element={<ContactView />}/>
         <Route path="/about" element={<AboutView />} />
-        <Route path="/more" element={<MoreView />} />
+        <Route path="/projects" element={<ProjectsView />} />
 
       </Routes>
       <DarkSpace />

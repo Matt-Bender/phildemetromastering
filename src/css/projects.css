@@ -1,0 +1,44 @@
+@import './scss/custom.css';
+
+.project-card-image {
+  /* max-width:300px; */
+  /* max-height:300px; */
+  width: 300px;
+  height: 300px;
+
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-card {
+    background-color: #e5d9b6 ;
+    border-width: 10px;
+    border-color: #be9e44;
+    border-radius: 15px;
+
+}
+
+/* .project-card :hover {
+    border-color: #be9e44;
+    border-width: 5px;
+} */
+
+/* .project-card :hover {
+    animation-duration: 1s;
+    animation-name: drawborder;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes drawborder {
+    from {
+        border-width: 0px;
+
+    }
+
+    to {
+        border-width: 5px;
+        border-color: #be9e44;
+    }
+} */

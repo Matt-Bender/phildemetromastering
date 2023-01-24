@@ -1,5 +1,5 @@
 import Hero from '../components/Home/Hero'
-import WhyUs from '../components/More/WhyUs'
+import WhyUs from '../components/Projects/ProjectsSection'
 import About from '../components/Home/About'
 import ContactForm from '../components/Home/ContactForm'
 import Footer from '../components/Home/Footer'

@@ -17,14 +17,23 @@ const ContactForm = () => {
 
     const sendEmail = (e) => {
       e.preventDefault();
-  
-      emailjs.sendForm('service_6xiqkyp', 'template_rep3qpp', form.current, 'ChUYKVVUT3MpRwQ5j')
+        
+      emailjs.send("service_6xiqkyp","template_te9hpm9",{
+        message: document.querySelector('#floatingTextArea').value,
+        Name: document.querySelector('#floatingName').value,
+        reply_to: document.querySelector('#floatingEmail').value,
+        },
+        'ChUYKVVUT3MpRwQ5j')
         .then((result) => {
             console.log(result.text);
             setShow(true)
         }, (error) => {
             console.log(error.text);
         });
+
+        
+    //   emailjs.sendForm('service_6xiqkyp', 'template_te9hpm9', form.current, 'ChUYKVVUT3MpRwQ5j')
+            
       e.target.reset()
     };
 
@@ -33,7 +42,7 @@ const ContactForm = () => {
             <div className="h-100 d-flex align-items-center justify-content-center">
             <div className="container">
         <div className="row h-100 d-flex align-content-center justify-content-center">
-          <div className="row mt-5 p-5 w-50 h-50 align-left rounded-4 bg-light">
+          <div className="row mt-5 p-5 width-50-100 h-50 align-left rounded-4 bg-light">
               <h2 className="pb-4 font-36 bold">Get in Touch</h2>
               <form ref={form} onSubmit={sendEmail}>
                   <div className="mb-3 form-floating contact-form__container">
@@ -45,11 +54,15 @@ const ContactForm = () => {
                       <label for="floatingInput" className="contact-form__label">Email</label>
                   </div>
                   <div className="mb-3 form-floating">
-                      <textarea name="message" className="form-control contact-form__input" id="floatingTextArea" placeholder="Message" required></textarea>
+                      <textarea name="message" className="form-control contact-form__input contact-form__message-input"
+                        id="floatingTextArea"
+                        placeholder="Message"
+                        rows="4"
+                         required></textarea>
                       <label for="floatingTextarea" className="contact-form__label">Message</label>
                       
                   </div>
-              <input type="submit" className="btn btn-primary py-2 px-5 rounded-pill text-dark font-24 bold contact-form__submit-btn" value="Send" />
+              <input type="submit" className="btn btn-primary py-2 px-5 rounded-pill text-dark font-24 bold contact-form__submit-btn hover-grow" value="Send" />
               </form>
 
               <Modal show={show} onHide={handleClose}>

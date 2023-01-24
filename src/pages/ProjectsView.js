@@ -1,18 +1,20 @@
 import React from 'react'
 import Software from '../components/More/Software'
-import WhyUs from '../components/More/WhyUs'
+import ProjectsSection from '../components/Projects/ProjectsSection'
 import Reference from '../components/More/Reference'
 import BlankSpace from '../components/BlankSpace'
+import WhyUsSection from '../components/More/WhyUsSection'
 
 
-export default function MoreView() {
+export default function ProjectsView() {
   return (
     <div>
       <BlankSpace />
-        <WhyUs/>
+        <ProjectsSection/>
       <BlankSpace />
+        <WhyUsSection/>
 
-        <Software />
+        {/* <Software /> */}
         <BlankSpace />
         <Reference />
     </div>

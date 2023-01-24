@@ -3,10 +3,25 @@
     color: var(--primary) !important;
   
   }
+.hire-button {
+  font-size: 26px!important;
+  font-weight: 900!important;
+}
+.hire-button:hover {
+  background-color: #be9e44!important;
+}
   
   .contact-button:hover{
     color: var(--light) !important;
     
+  }
+
+  .hover-grow { 
+    transition: all .2s ease-in-out; 
+    }
+
+  .hover-grow :hover {
+    transform: scale(1.1);
   }
 
 .navbar {
@@ -21,6 +36,43 @@
   margin: 10px;
 }
 
-.social-container {
+/* .social-container {
 
+} */
+
+@media (max-width: 1400px) {
+
+  .company-name-full {
+    display: none;
+
+  }
+  
+  
+}
+
+@media (max-width: 1200px) {
+  .social-container {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-bar-item {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .company-name-abreviated {
+    display: none;
+
+  }
+  
+  
 }

@@ -11,12 +11,19 @@ const Hero = () => {
             
         <div className="fullscreen has-bg-img">
             {/* <BlankSpace /> */}
-            <div class="row h-100 m-5">
-                <div class="col-sm-12 my-auto   ">
-                    <div class="card w-50 bg-info rounded-4 text-dark border-0 opacity-75">
-                        <div class="card-body m-4">
-                            <h5 class="card-title align-items-center font-36 bold">Your Title here</h5>
-                            <p class="card-text font-20">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div className="row h-100 m-5">
+                <div className="col-sm-12 my-auto   ">
+                    <div className="card bg-info rounded-4 text-dark border-0 opacity-75 width-50-100">
+                        <div className="card-body m-4">
+                            <h5 className="card-title align-items-center font-44 bold">Mastering Done Right</h5>
+                            <p className="card-text font-28">
+                                Your one-stop shop to a refined, professional sound.
+                            </p>
+                            {/* <button className="btn btn-dark text-primary bold rounded-4 m-3 p-3">
+                                <h1>
+                                    Hire Us
+                                </h1>
+                            </button> */}
                         </div>
                     </div>
                 </div>

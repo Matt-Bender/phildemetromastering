@@ -1,9 +1,12 @@
 .has-bg-img {
     background-image: url("../images/soundboard1.jpg");
-    height: 100vh;
+    height: 120%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
   }
 
   .about-img {
@@ -21,6 +24,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
   }
 
   

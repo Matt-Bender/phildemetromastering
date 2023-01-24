@@ -11,3 +11,8 @@
     background-color: --primary;
 
 }
+
+.contact-form__message-input {
+    min-height: 300px;
+    /* resize: none; */
+}

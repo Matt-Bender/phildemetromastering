@@ -2,7 +2,7 @@ import whyus1 from '../../images/mic-headphones-landscape-2.jpg'
 import whyus2 from '../../images/mic-headphones-landscape.jpg'
 import whyus3 from '../../images/soundboard2.jpg'
 
-const WhyUsCards = [
+const ProjectsCards = [
     {
         id: 1,
         title: "We go beyond the Mastering",
@@ -23,4 +23,4 @@ const WhyUsCards = [
     }
 ]
 
-export default WhyUsCards
+export default ProjectsCards
