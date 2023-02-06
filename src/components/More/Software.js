@@ -5,6 +5,7 @@ import QBO from '../../images/logos/QBO-logo.png'
 import wave from '../../images/logos/wave-logo.jpg'
 import PaySimply from '../../images/logos/PaySimply-logo.png'
 import Fade from 'react-reveal/Fade';
+import { EquipmentList } from './EquipmentList'
 
 
 const Software = () => {
@@ -14,12 +15,27 @@ const Software = () => {
         <Fade>
         <div className="container">
             <div className="font-72 bold text-center">
-                Some of Our Favourite Tools
+                Approach
             </div>
+            <p className="font-20">
+            Years of ongoing critical listening tests of every aspect of a modern studio has culminated in assembling the best audio signal path that I am aware of anywhere in the world. From 240V power to custom cabling to proprietary gear modifications All of these elements ensure the lowest noise floor to make room for the maximum delivery of a musical signal.
+            </p>
         
           
             <div className="row d-flex justify-content-around align-items-center">
+
+
+            {/* {EquipmentList.map((el) => {
+                            return <div id={el.id}>
+                                {el.Name}
+                            <img src={el.img} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" height="150px"/>
+
+
+                            </div>
+
+                        })} */}
                 <div className="col-lg-2 col-md-4 col-sm-6 col-6 hover-grow">
+
                     <a href="https://www.waveapps.com/" target="_blank">
                         <img src={wave} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" height="150px"/>
                     </a>

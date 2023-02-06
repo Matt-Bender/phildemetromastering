@@ -1,4 +1,5 @@
 import micheadphones from '../../images/mic-headphones-portait.jpg';
+import { EquipmentList } from './EquipmentList';
 
 const Reference = () => {
     return (
@@ -9,6 +10,8 @@ const Reference = () => {
                 
                 <div className="card w-50 border-0 bg-light">
                     <div className="row">
+                        
+
                         <div className="col-md-5 d-flex align-items-center">
                         <img src= { micheadphones } className="img-fluid rounded-5" width="700" height="500" alt="..."/>
                         </div>

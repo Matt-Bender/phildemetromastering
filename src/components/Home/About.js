@@ -15,7 +15,7 @@ const About = () => {
                         
                                 <div className="card-img-overlay d-flex justify-content-end align-items-center mx-5 ">
                                     <p className="card-text font-about p-3 rounded-3 bg-primary text-dark width-50-100 opacity-100-70">
-                                    I deliver commitment, energy and results in all styles. Over two decades of real-world results means your music will compete anywhere. 
+                                    Formally a senior Mastering Engineer at the prestigious Lacquer Channel, in Toronto, I have 2+ decades of mastering experience and have worked on 10,000's of projects.  I have recently struck out on my own with the intention of serving my clients more efficiently while staying within your budget. 
                                     <br/> <br/>
 
                                     <em>Phil DeMetro</em> 

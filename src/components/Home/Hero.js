@@ -15,9 +15,9 @@ const Hero = () => {
                 <div className="col-sm-12 my-auto   ">
                     <div className="card bg-info rounded-4 text-dark border-0 opacity-75 width-50-100">
                         <div className="card-body m-4">
-                            <h5 className="card-title align-items-center font-44 bold">Mastering Done Right</h5>
+                            <h5 className="card-title align-items-center font-44 bold">Welcome to Phil Demetro Mastering!</h5>
                             <p className="card-text font-28">
-                                Your one-stop shop to a refined, professional sound.
+                            Thank you for visiting
                             </p>
                             {/* <button className="btn btn-dark text-primary bold rounded-4 m-3 p-3">
                                 <h1>

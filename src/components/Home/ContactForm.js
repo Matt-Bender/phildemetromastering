@@ -64,6 +64,11 @@ const ContactForm = () => {
                   </div>
               <input type="submit" className="btn btn-primary py-2 px-5 rounded-pill text-dark font-24 bold contact-form__submit-btn hover-grow" value="Send" />
               </form>
+              <div className="pt-3">
+              For information or other inquiries please contact me via email or phone:
+                phildemetromastering@gmail.com <br/>
+                (416) 998-7660
+              </div>
 
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
