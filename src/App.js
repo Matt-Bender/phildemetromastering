@@ -26,11 +26,11 @@ function App() {
       <Navbar/>
 
       <Routes>
-        <Route exact path="/" element={<HomeView />}/>
         <Route path="/contact" element={<ContactView />}/>
         <Route path="/delivery" element={<DeliveryView />}/>
 
         <Route path="/about" element={<AboutView />} />
+        <Route exact path="/" element={<HomeView />}/>
 
       </Routes>
       <DarkSpace />

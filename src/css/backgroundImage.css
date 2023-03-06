@@ -30,3 +30,16 @@
   }
 
   
+  .delivery-cover-image {
+    background-image: url("../images/ClientGallery/WideAngle.jpg");
+
+    /* height: 40%; */
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* position: fixed; */
+    width: 100%;
+    z-index: -1;
+    
+
+  }
