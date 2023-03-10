@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import keyboard from '../../images/mic-headphones-landscape.jpg';
+import keyboard from '../../images/ClientGallery/equipment.jpg';
 import MyModal from '../MyModal';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';

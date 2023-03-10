@@ -5,14 +5,10 @@ import Footer from './components/Home/Footer';
 import ContactView from './pages/ContactView';
 import HomeView from './pages/HomeView';
 import { Routes, Route } from 'react-router-dom';
-import BlankSpace from './components/BlankSpace';
 import AboutView from './pages/AboutView';
-import Fade from 'react-reveal/Fade';
-import TestComponent from './components/TestComponent';
-import Stylesheet from './components/Stylesheet';
 import './css/app.css';
 import DarkSpace from './components/DarkSpace';
-import DeliveryView from './pages/DeliveryView';
+import EquipmentView from './pages/EquipmentView';
 
 
 
@@ -27,7 +23,7 @@ function App() {
 
       <Routes>
         <Route path="/contact" element={<ContactView />}/>
-        <Route path="/delivery" element={<DeliveryView />}/>
+        <Route path="/equipment" element={<EquipmentView />}/>
 
         <Route path="/about" element={<AboutView />} />
         <Route exact path="/" element={<HomeView />}/>

@@ -1,8 +1,8 @@
 import React from 'react'
 import BlankSpace from '../components/BlankSpace'
 
-export default function DeliveryView() {
-  const deliveryData = [
+export default function EquipmentView() {
+  const EquipmentData = [
     {id: 1,
       title: 'Analog',
       list: ['Sontec', 'Neumann', 'Focusrite', 'Manley', 'Neve', 'Meyer Sound', 'Dangerous Music', 'Rupert Neve Designs'
@@ -29,12 +29,12 @@ export default function DeliveryView() {
   return (
     <div className="fullscreen delivery-cover-image">
       <BlankSpace/>
-      <div className="text-center font-72 bold pb-3 mb-3 bg-secondary">Delivery</div>
+      <div className="text-center font-72 bold pb-3 mb-3 bg-secondary">Equipment</div>
 
       <div className="container-fluid">
         <div className="row d-flex justify-content-evenly">
 
-      {deliveryData.map(item => {
+      {EquipmentData.map(item => {
         return <div key={item.id} className=" m-2 px-2 py-3  bg-primary bg-opacity-75 rounded-4 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3" >
                 {/* <div className="card"> */}
                   {/* <div className="card-body"> */}

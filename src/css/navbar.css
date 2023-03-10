@@ -36,6 +36,11 @@
   margin: 10px;
 }
 
+.icon-invert {
+  /* filter: invert(100%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);  */
+  /* -webkit-filter: invert(100%); */
+}
+
 /* .social-container {
 
 } */

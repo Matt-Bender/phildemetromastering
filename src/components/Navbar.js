@@ -29,8 +29,8 @@ const Navbar = () => {
     },
     {
       id: 3,
-      title: "Delivery",
-      link: "/delivery"
+      title: "Equipment",
+      link: "/equipment"
 
     },
   ]
@@ -43,7 +43,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand py-3 shadow-lg fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <h3 className="text-primary rounded-4 mx-5 px-4 font-36 company-name-full hover-grow hide-l-1400"><strong>Phil DeMetro Mastering</strong></h3>
+            <h3 className="text-primary rounded-4 mx-5 px-4 font-28 company-name-full hide-l-1400"><strong>Phil DeMetro Mastering</strong></h3>
             <h3 className="text-primary rounded-4 mx-5 px-4 font-36 company-name-abreviated hover-grow hide-l-1000 hide-g-1400"><strong>PDM</strong></h3>
 
             </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
 
       <div className="menu-button-container">
         <button className="menu-button hide-g-1000" onClick={handleShow}>
-          <img src={menu} className="menu-button-img m-4"/>
+          <img src={menu} className="menu-button-img m-4" alt="menu button"/>
         </button>
 
       </div>

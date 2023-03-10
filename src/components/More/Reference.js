@@ -1,4 +1,4 @@
-import micheadphones from '../../images/mic-headphones-portait.jpg';
+import micheadphones from '../../images/ClientGallery/equipment.jpg';
 import { EquipmentList } from './EquipmentList';
 
 const Reference = () => {
