@@ -123,6 +123,13 @@ code {
   height: 10%;
 }
 
+@media (max-width: 786px) {
+  .hover-appear {
+    opacity:1;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hover-appear {
     opacity:0;

@@ -31,12 +31,12 @@
 
   
   .delivery-cover-image {
-    background-image: url("../images/ClientGallery/WideAngle.jpg");
+    background-image: url("../images/ClientGallery/BWEquipment.JPG");
 
     /* height: 40%; */
-    background-position: bottom left;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     /* position: fixed; */
     width: 100%;
     z-index: -1;
