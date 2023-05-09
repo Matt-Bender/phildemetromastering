@@ -46,10 +46,10 @@ function DiscographyCard(props) {
          className="album-icon"
          src={album}/>}
               
-              <div className=" card-img-overlay hover-appear text-white">
-                  <h5 className="card-title font-32 bold mx-2">{Artist.slice(0,20)}</h5>
-                  <p className="card-text font-18 mx-2">{Album.slice(0,40)}</p>
-                  <p className="card-text font-18 mx-2">{Year}</p>
+              <div className="card-img-overlay hover-appear text-white">
+                  <p className="card-title font-18 bold">{Artist.length > 20? Artist.slice(0,20)&"..." : Artist}</p>
+                  <p className="card-text font-12">{Album.length > 20 ? Album.slice(0,20) + "..." : Album}</p>
+                  <p className="card-text font-14">{Year}</p>
               </div>
           </div>
 

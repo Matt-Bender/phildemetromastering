@@ -21,6 +21,15 @@ const About = () => {
                                     <em>Phil DeMetro</em> 
                                     <br/>
                                     Mastering Engineer
+                                    <br/>
+                                    <br/>   
+                                    <div className="text-center">
+                                        <a href="http://www.maximumexposureinc.com/botf/2023/1/30/interview-phil-dimetro" target="_blank">
+                                            <button  
+                                            className='btn btn-secondary text-dark bold border border-dark font-24 rounded-pill px-5'>Read More</button>
+                                        </a>
+                                    </div>
+
 
 
                                     </p>

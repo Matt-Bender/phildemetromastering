@@ -14,25 +14,26 @@ import YearDropdown from './YearDropdown';
 const Discography = () => {
     const [cards, setCards] = useState(ProjectsCards)
     const [currentPage, setCurrentPage] = useState(1);
-    const [cardsPerPage, setCardsPerPage] = useState(12);
+    const [cardsPerPage, setCardsPerPage] = useState(18);
     const [show, setShow] = useState(true)
     // const [selectedYear, setSelectedYear] = useState()
-    // const [ sortBy, setSortBy ] = useState("Year")
+    const [ sortBy, setSortBy ] = useState("Year")
     // const [yearFilteredCards, setYearFilteredCards] = useState()
     
-    // useEffect(() => {
-    //     console.log(sortBy)
-    //     setCards(cards.sort((a,b) => {
-    //         if (sortBy === "Year") {
-    //             return a.Year - b.Year;
-    //         } else if (sortBy ==="Artist") {
-    //             return a.Artist - b.Artist;
-    //         } else if (sortBy === "Album") {
-    //             return a.Album - b.Album
-    //         }
-    //     }))
+    useEffect(() => {
+        console.log(sortBy)
+        setCards(cards.sort((a,b) => {
+            if (sortBy === "Year") {
+                return b.Year - a.Year;
+            } else if (sortBy ==="Artist") {
+                console.log('Artist sort')
+                return a.Artist - b.Artist;
+            } else if (sortBy === "Album") {
+                return a.Album - b.Album
+            }
+        }))
 
-    // },[sortBy])
+    },[sortBy])
  
    const indexOfLastCard = currentPage * cardsPerPage;
    const indexOfFirstCard = indexOfLastCard - cardsPerPage;
@@ -89,7 +90,7 @@ const Discography = () => {
                             </ul>
                             </div> */}
 
-                            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-6">
                  <Fade left big opposite when={show} duration={1000}>
                     {currentCards.map(card => {
                         return <ProjectCard key={card.id} {...card}/>

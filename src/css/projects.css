@@ -1,10 +1,10 @@
 @import './scss/custom.css';
 
 .project-card-image {
-  /* max-width:250px; */
-  /* max-height:250px; */
-  /* width: 20px; */
-  /* height: 20px; */
+  /* max-width:150px; */
+  /* max-height:150px; */
+  max-width: 150px;
+  max-height: 150px;
 
   /* width: auto; */
   /* height: auto; */
@@ -16,10 +16,15 @@
     border-width: 10px;
     border-color: #be9e44;
     border-radius: 15px;
+    
 
 }
 
 .album-icon {
   filter: invert(75%) sepia(71%) saturate(267%) hue-rotate(2deg) brightness(86%) contrast(84%);
 
+}
+
+.card-img-overlay {
+  line-height: 5px!important;
 }
