@@ -90,7 +90,7 @@ const Discography = () => {
                             </ul>
                             </div> */}
 
-                            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-6">
+                            <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
                  <Fade left big opposite when={show} duration={1000}>
                     {currentCards.map(card => {
                         return <ProjectCard key={card.id} {...card}/>

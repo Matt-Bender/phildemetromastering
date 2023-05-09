@@ -3,13 +3,23 @@
 .project-card-image {
   /* max-width:150px; */
   /* max-height:150px; */
-  max-width: 150px;
-  max-height: 150px;
+  max-width: none;
+    max-height: none;
 
   /* width: auto; */
   /* height: auto; */
   object-fit: cover;
 }
+
+@media (min-width: 1000px) {
+  .project-card-image {
+    max-width: 150px;
+    max-height: 150px;
+
+  }
+
+}
+
 
 .project-card {
     /* background-color: #e5d9b6 ; */
@@ -27,4 +37,8 @@
 
 .card-img-overlay {
   line-height: 5px!important;
+}
+
+p {
+  line-height: 1;
 }
