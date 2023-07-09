@@ -6,6 +6,7 @@ import ProjectsCards from '../data/ProjectsCards';
 import Paginate from './Paginate';
 import Pagination from 'react-bootstrap/Pagination';
 import YearDropdown from './YearDropdown';
+import ProjectsCardsNew from '../data/ProjectsCardsNew';
 
 
 
@@ -58,6 +59,17 @@ const Discography = () => {
     setShow(!show);
    }
 
+   function findFilenameByIndex(arr, targetIndex) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i].ind);
+      if (arr[i].ind == targetIndex) {
+        // console.log(arr[i].filename)
+        return arr[i].filename;
+      }
+    }
+    return null; // Return null if no matching index is found
+  }
+
     return (
         <div className="fullscreen bg-light">
             <div className="text-center font-72 bold pb-5 bg-secondary">Discography</div>
@@ -93,7 +105,10 @@ const Discography = () => {
                             <div className="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
                  <Fade left big opposite when={show} duration={1000}>
                     {currentCards.map(card => {
-                        return <ProjectCard key={card.id} {...card}/>
+                        const filename = findFilenameByIndex(ProjectsCardsNew, card.ID);
+                        console.log("test filename", filename);
+                        
+                        return <ProjectCard key={card.ID} {...card} />
                         
                     })}
                     </Fade>

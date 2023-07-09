@@ -13,12 +13,12 @@ const About = () => {
                     <div className="card bg-dark text-white rounded-5 desktop-about">
                         <img src={Phil} className="card-img rounded-5 about-img" alt="Headshot"/>
                         
-                                <div className="card-img-overlay d-flex justify-content-end align-items-center mx-5 ">
-                                    <p className="card-text font-about p-3 rounded-3 bg-primary text-dark width-50-100 opacity-100-70">
+                                <div className="card-img-overlay-about position-absolute bottom-0 d-flex justify-content-end width-50-100 align-items-center m-5 ">
+                                    <p className="card-text font-about p-3 rounded-3 bg-primary text-dark opacity-100-70">
                                     Formally a senior Mastering Engineer at the prestigious Lacquer Channel, in Toronto, I have 2+ decades of mastering experience and have worked on 10,000's of projects.  I have recently struck out on my own with the intention of serving my clients more efficiently while staying within your budget. 
                                     <br/> <br/>
 
-                                    <em>Phil DeMetro</em> 
+                                    <em>Phil Demetro</em> 
                                     <br/>
                                     Mastering Engineer
                                     <br/>

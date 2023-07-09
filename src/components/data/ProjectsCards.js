@@ -1,3 +1,16 @@
+// import * as imageSrc from '../../images/discography-images/';
+// let imageUrl = [];
+//     imageSrc.map(
+//     imageUrl.push(img) 
+//     ));
+
+
+    function importAll(r) {
+        return r.keys().map(r);
+      }
+      
+      const images = importAll(require.context('../../images/discography-images/', false, /\.(png|jpe?g|svg)$/));
+
 const ProjectsCards = [
     {
      "ID": 1,
@@ -6,7 +19,7 @@ const ProjectsCards = [
      "Year": 2022,
      "Artist": "Big Sugar",
      "Album": "Heated",
-     "Image": "https://i.discogs.com/9XpTrRSDkUPWZoOUBVla1ZdXZFfLZP6anff23mdFeHM/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODI1/MzU5LTE2NzgyMzUx/NDEtNzQ3MS5qcGVn.jpeg"
+     "Image": images[1]
     },
     {
      "ID": 2,

@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import loading from '../../images/icons/Spinner-1s-200px.svg';
 import album from '../../images/icons/album.png';
+// import testimage from filename;
+
 
 function DiscographyCard(props) {
     const {
+    ID,
     Artist,
     Album,
     Image,
@@ -29,22 +32,28 @@ function DiscographyCard(props) {
     }, 5000)
   };
 
+  function importAll(r) {
+    return r.keys().map(r);
+  }
+  
+  const images = importAll(require.context('../../images/discography-images/', false, /\.(png|jpe?g|svg)$/));
+
   return (
        <div className="col rounded-5">
-         <div className="card m-3 project-card">
-         {Image && <img 
-                src={imageUrl}
+         <div className="card project-card">
+         <img 
+                src={images[ID-1]}
                 className="card-img project-card-image" 
                 alt={`Album Artwork ${Album} - ${Artist}`} 
-                onLoad={()=> setIsImageLoaded(true)}
-                onError={handleImageError}
+                // onLoad={()=> setIsImageLoaded(true)}
+                // onError={handleImageError}
                 // style={{ display: isImageLoaded ? 'block' : 'none'}}
                 // loading="lazy"
                 /> 
-         }
-         {!Image && <img
+         
+         {/* {!Image && <img
          className="album-icon"
-         src={album}/>}
+         src={album}/>} */}
               
               <div className="card-img-overlay hover-appear text-white">
                   <p className="card-title font-18 bold">{Artist.length > 20? Artist.slice(0,20) + "..." : Artist}</p>
