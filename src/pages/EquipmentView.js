@@ -2,7 +2,6 @@ import React from 'react'
 import BlankSpace from '../components/BlankSpace';
 import EquipmentData from '../components/data/EquipmentData';
 import Fade from 'react-reveal/Fade';
-//testing out change
 
 
 export default function EquipmentView() {
